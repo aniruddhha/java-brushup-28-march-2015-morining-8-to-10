@@ -8,12 +8,13 @@ public class MyFirstApp {
         
         Animal animal = new Animal();
         animal.blinkEyes();
+        animal.blinkEyes(3);
         
         String str = new String("android");
         
         System.out.println(" "+str.toUpperCase());
         
-        Animal an = new Animal(4, 2);
+        Animal an = new Animal(6, 2);
         
         Animal an2 = new Animal(an);
         

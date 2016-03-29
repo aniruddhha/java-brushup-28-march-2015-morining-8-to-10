@@ -13,11 +13,14 @@ public class Animal {
     
     int legs;
     int eyes;
+    
     String name = new String("Tiger");
 
     Animal() {
         
         // default
+        legs = 2;
+        eyes = 2;
     }
     
     Animal(int myLegs, int myEyes) {
@@ -29,6 +32,8 @@ public class Animal {
     
     Animal(Animal animal){
         
+        legs = animal.legs;
+        eyes = animal.eyes;
         // copy
     }
     
@@ -41,6 +46,11 @@ public class Animal {
     void blinkEyes(){
         
         eyes = 0;
+    }
+    
+    void blinkEyes(int rate){
+        
+        eyes = rate *2;
     }
     
     void giveName(){
